@@ -25,4 +25,8 @@ export class LucasTasksServiceService {
   deleteTask(key: number) {
     this.myTaks.removeItem(key.toString());
   }
+
+  countTarefas() {
+    return this.myTaks.length;
+  }
 }

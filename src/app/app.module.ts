@@ -18,7 +18,12 @@ import { LucasTasksServiceService } from './lucas-tasks-service.service';
       { path: 'tarefas', component: LucasTasksComponentComponent },
     ]),
   ],
-  declarations: [AppComponent, HelloComponent],
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    LucasHomeComponentComponent,
+    LucasTasksComponentComponent,
+  ],
   bootstrap: [AppComponent],
   providers: [LucasTasksServiceService],
 })
