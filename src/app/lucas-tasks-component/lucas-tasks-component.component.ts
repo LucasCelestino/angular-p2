@@ -17,6 +17,12 @@ export class LucasTasksComponentComponent implements OnInit {
   }
 
   createTask() {
-    
+    this.myTasks.createTask(this.myTask);
+    window.location.reload();
+  }
+
+  deleteTask(i: number) {
+    this.myTasks.deleteTask(i);
+    window.location.reload();
   }
 }

@@ -5,9 +5,10 @@
   </tr>
   <tr *ngFor="let item of myList; index as i">
     <td>{{ item }}</td>
-    <td><button>Deletar</button></td>
+    <td><button (click)="deleteTask(i)">Deletar</button></td>
   </tr>
 </table>
 <div>
-  <input type="submit" value="Cadastrar" />
+  <input type="text" [(ngModel)]="myTask" />
+  <input type="submit" value="Cadastrar" (click)="createTask()" />
 </div>
